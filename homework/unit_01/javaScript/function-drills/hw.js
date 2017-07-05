@@ -11,8 +11,8 @@
 // Output: the sum of the numbers that were passed in
 // Edge Case: If the array is empty, return 0
 var sumOfNums = function(numsArray){
-  var sum =  0;
-  for(var i=0;i<numsArray.length;i++) {
+  var sum = 0;
+  for (var i = 0; i < numsArray.length; i++) {
     sum += numsArray[i];
   }
   return sum;
@@ -23,7 +23,13 @@ var sumOfNums = function(numsArray){
 // Output: an array of the numbers from the first array that are strictly
 //         greater (i.e. greater than but not equal to) than 10
 var numsGreaterThanTen = function(numsArray){
-  // Your Code Here
+  var results =[];
+  for (var i = 0; i < numsArray.length; i++) {
+    if (numsArray[i] > 10) {
+      results.push(numsArray[i]);
+    }
+  } 
+  return results;
 };
 
 // #3
@@ -32,14 +38,25 @@ var numsGreaterThanTen = function(numsArray){
 //         `false` otherwise
 // Edge Case: If the input array is empty, the function should return `true`.
 var allGreaterThanTen = function(numsArray){
-  // Your Code Here
+  for (var i = 0; i < numsArray.length; i++) {
+    if (!(numsArray[i] > 10)) {
+      return false;
+    }
+  }
+  return true;
 };
 
 // #4
 // Input: an array of words
 // Output: an array of all words from the first array with five or more letters
 var wordsWithAtLeastFiveLetters = function(words){
-  // Your Code Here
+  var results = [];
+  for (var i = 0; i < words.length; i++) {
+    if (words[i].length >= 5) {
+      results.push(words[i]);
+    }
+  }
+  return results;
 };
 
 // #5
@@ -48,7 +65,12 @@ var wordsWithAtLeastFiveLetters = function(words){
 //          `false` otherwise
 // Edge Case: If the array is empty, the function should return `true`.
 var allStartingWithA = function(words){
-  // Your Code Here
+  for (var i = 0; i < words.length; i++) {
+    if (!(words[i].slice(0, 1) === 'a' || words[i].slice(0, 1) === 'A')) {
+      return false;
+    }
+  }
+  return true;
 };
 
 // #6
