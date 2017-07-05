@@ -78,7 +78,12 @@ var allStartingWithA = function(words){
 // Output: `true` if there are ANY words that start with the letter 'b'
 //          (case-insensitive), `false` otherwise
 var anyStartingWithB = function(words){
-  // Your Code Here
+  for (var i = 0; i < words.length; i++) {
+    if (words[i].slice(0, 1) === 'b' || words[i].slice(0, 1) === 'B') {
+      return true;
+    }
+  }
+  return false;
 };
 
 // #7
@@ -88,7 +93,16 @@ var anyStartingWithB = function(words){
 //    Assume that vowels are 'a', 'e', 'i', 'o', and 'u' (NOT 'y')
 // Edge Case: If `n` is less than zero, return `null`.
 var hasAtLeastNVowels = function(word, n){
-  // Your Code Here
+  if (n < 0) {
+    return null;
+  }
+  var count = 0;
+  for (var i = 0; i < word.length; i++) {
+    if (word.charAt(i) === 'a' || word.charAt(i) === 'A' || word.charAt(i) === 'e' || word.charAt(i) === 'E' || word.charAt(i) === 'i' || word.charAt(i) === 'I' || word.charAt(i) === 'o' || word.charAt(i) === 'O' || word.charAt(i) === 'u' || word.charAt(i) === 'U') {
+      count++;
+    }
+  }
+  return count >= n;
 };
 
 // #8
