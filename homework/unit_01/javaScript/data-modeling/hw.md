@@ -84,7 +84,7 @@ For this app I have defined tasks with a time measurement and completion status.
 In this app, users can upload photos to their accounts and share them with others. These photos can be grouped into albums.
 
 var user {
-  userName: 'MikeNewm32';
+  username: 'MikeNewm32';
   numberOfPhotos: 234;
   numberOfAlbums: 15;
   listOfAlbums: ['Summer Time', 'Birthday', 'Vacation']
@@ -311,7 +311,7 @@ Under what circumstances might one representation be a better choice than the
 other? Are there any circumstances in which the other representation might be
 the better choice?
 
-> Answer here
+To me the first example would be advantageous in keeping up with doctors and their appointment schedules while the second option would be better suited for a front desk or customer usage. While the first option shows the doctor what appointments they have and at what times it would be tedious for a patient to find out when and with who their appointment is.
 
 ## Tying It Together
 
@@ -322,13 +322,48 @@ You've been tasked with building an in-browser tic-tac-toe game.
 a.  What are some possible entities that your application might use to model its
     data? Please pick at least two, with at least two properties apiece.
 
-  > Answer here
+player: username, rank, W/L ratio.
+game: board positions(0-8 going left to right starting in top left quadrant), locations of player x tokens, location of player o tokens, win parameters(three in a row [0,1,2] [0,3,5] etc.)
 
 b.  How might those entities be represented in JavaScript code?
 
-  > Answer here
+var playerX = {
+  username = 'MikeNewm32';
+  rank = '1st';
+  winLossRatio = '87/100';
+}
+var playerO = {
+  username = 'Jaws'
+  rank = '78th'
+  winLossRatio = '15/46'
+}
+var game = {
+  playerX = {
+    username = 'MikeNewm32'
+    rank = '1st'
+    winLossRatio = '87/100'
+  }
+  playerO = {
+    username = 'Jaws'
+    rank = '78th'
+    winLossRatio = '15/46'
+  }
+  locationOfTokens = [
+    { playerX = '0'
+  }
+    { playerO = '5'
+  } 
+    { playerX = '3'
+  }
+    { playerO = '2'
+  }
+    { playerX = '6'
+  }
+]
+}
+player x wins
 
 c.  Justify your choices in a) and b). Why these entities? Why these
     representations?
 
-  > Answer here
+The tokens are tracked on the game board along with the player that is making the move. Player name and skill level/record are also accounted for to allow better match making. 
