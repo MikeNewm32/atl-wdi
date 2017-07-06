@@ -60,13 +60,47 @@ track of whether tasks have been completed, it will also keep track of
 how long each task took to complete. Tasks can be grouped into 'projects' to
 keep them organized.
 
-> Answer here
+var shrubs = {
+  name: 'cut shrubs';
+  startDate: 06/06/17;
+  completionDate: 06/17/17;
+};
+var grass = {
+  name: 'cut grass';
+  startDate: 06/18/17;
+  completionDate: 06/19/17;
+};
+var project1 = {
+  name: 'yardWork';
+  projectStart:06/06/17;
+  projectComplete: 06/19/17;
+  tasks: ['grass', 'shrubs']
+};
+
+For this app I have defined tasks with a time measurement and completion status. They have also been grouped in a overall project for yard work
 
 ### 2. Photo Sharing App
 
 In this app, users can upload photos to their accounts and share them with others. These photos can be grouped into albums.
 
-> Answer here
+var user {
+  userName: 'MikeNewm32';
+  numberOfPhotos: 234;
+  numberOfAlbums: 15;
+  listOfAlbums: ['Summer Time', 'Birthday', 'Vacation']
+};
+var photo {
+  date: 07/04/17;
+  title: 'Fireworks';
+  file: 'images/photo10.img';
+  locationOfPicture: 'Marietta Square';
+};
+var album {
+  albumTitle: 'Summer Time';
+  photosInAlbum: ['images/photo5.img', 'images/photo8.img', 'images/photo9.jpg', 'images/photo10']
+};
+
+I have provided a user ability to see both how many pics and albums they have along with titles of albums. Photos are dated titled have location and file link for ease of searching later. Albums simply have a title and the pics added to said album.
 
 ### 3. Home Automation Manager
 
@@ -75,7 +109,22 @@ track of the time and temperature of the house that it monitors, and use that
 information to turn on and off different lights and adjust the thermostat up
 and down.
 
-> Answer here
+var lighting = {
+  time: 1800 hrs;
+  lightLocation: 'front porch';
+  lightActive: true;
+  lightSetting: 'automated';
+  lightPowerOnMode: 'motion';
+};
+var homeComfort = {
+  time: 1800 hrs;
+  currentTempInside: '74 F';
+  thermometerSetting: 'automated';
+  pmTempSetting: '72 F';
+  maxTempThreshold: '74 F';
+};
+
+Time and temperature are both monitored with an automation setting enabled for both A/C and lighting with activation parameters.
 
 ### 4. Sneaker Store
 
@@ -83,7 +132,7 @@ This app will allow customers to browse a list of products (sneakers, in this
 case), add those products to a cart, and save that cart as a past order once the
 purchase is complete.
 
-> Answer here
+
 
 ## Representing Abstractions in Code
 
