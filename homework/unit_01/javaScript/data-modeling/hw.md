@@ -132,7 +132,27 @@ This app will allow customers to browse a list of products (sneakers, in this
 case), add those products to a cart, and save that cart as a past order once the
 purchase is complete.
 
+var product = {
+  name: 'Nike cross trainer';
+  description: 'Great all around running shoe with heel and arch support';
+  color: 'black';
+  sizeUs: '12';
+  price: '$45.00';
+};
+var cart = {
+  product: 'NikeCT';
+  quantity: '3';
+  cartTotalPrice: '$135.00';
+  statusOfOrder: 'paid';
+  dateOfPayment: '06/28/17';
+};
+var orders = {
+  orderedOn: '06/28/17';
+  recievedOn: '07/01/17';
+  status: 'complete';
+};
 
+Products with price and description provided along with an active cart and prior orders and the dates along with completion status.
 
 ## Representing Abstractions in Code
 
@@ -188,7 +208,7 @@ var exampleLine = {
 
 What are some advantages and disadvantages of choosing these representations? Please give at least one example of each.
 
-> Answer here
+Advantage would be that it gives you the names and number of stops on each line however the order for the stops is not given and your current location on the line is not given.
 
 ### 6. Doctor Appointment App
 
