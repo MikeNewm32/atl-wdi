@@ -11,7 +11,7 @@ var makeChange = function(price, payment) {
   var changeOwed = Math.floor(100*payment - 100*price);
   // give back smallest amount of change possible
   // if no change owed give 0
-  if (changeOwed < 0) {
+  if (changeOwed <= 0) {
     return [0, 0, 0, 0]}
   var changeGiven = [], howMany;
   coinDenominations.forEach(function(val) {
