@@ -4,6 +4,12 @@ Creating a page where every time the user hits the "Roll Dice" button, the scree
 
 1) Write down pseudocode for the following program.
 
+create for rolling dice
+assign variable for math to get number returns for each die
+use math.floor to round math.random and multiply by 6 to account for faces of die but add 1 to account for face 6
+pull die images from css 
+
+
 2) Follow the steps below to write your code.
 * generate a random number between 1 - 6 and store to a variable, random1
 * generate a random number between 1 - 6 and store to a variable, random2
@@ -15,3 +21,13 @@ Creating a page where every time the user hits the "Roll Dice" button, the scree
 3) Check to see if the Dice Roll has been hit, if it has run the diceRoll function.
 
 */
+document.getElementById('roll-dice').onclick = diceRoll;
+
+function diceRoll() {
+var random1 = Math.floor((Math.random() * 6) + 1);
+var random2 = Math.floor((Math.random() * 6) + 1);
+var firstDie = 'dice-' + random1;
+var secondDie = 'dice-' + random2;
+document.getElementById("first-die").className = firstDie;
+document.getElementById("second-die").className = secondDie;
+}
