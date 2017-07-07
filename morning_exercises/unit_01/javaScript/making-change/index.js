@@ -8,7 +8,7 @@ var makeChange = function(price, payment) {
   // denominations of coins
   var coinDenominations = arguments[2] || [25, 10, 5, 1];
   // find out what the change is
-  var changeOwed = Math.round(100*payment - 100*price);
+  var changeOwed = Math.floor(100*payment - 100*price);
   // give back smallest amount of change possible
   // if no change owed give 0
   if (changeOwed < 0) {
