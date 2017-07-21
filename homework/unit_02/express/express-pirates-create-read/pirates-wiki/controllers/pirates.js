@@ -7,12 +7,12 @@ var pirates = require('../models/pirates.js');
 
 
 //all routes for /pirate
-router.get('/', (req, res) => {
-    data: ('pirates/index')
-});
-router.post('/', (req, res) => {
-    data.seededPirates.push(newPirate);
-    res.redirect('/pirates');
+var pirateController = require('./controllers/pirates.js');
+app.use("/pirates", pirateController);
+
+
+app.get('/', (req, res) => {
+    res.send('This is our homepage');
 });
 
 //exports
