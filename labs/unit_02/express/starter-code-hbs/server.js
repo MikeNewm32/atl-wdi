@@ -4,16 +4,20 @@ var logger      = require('morgan');
 var express     = require('express');
 var hbs         = require('hbs');
 const bodyParser = require('body-parser');
+const methodOverride = require('method-override');
+
 /* app settings*/
 var app         = express();
 var port        = process.env.PORT || 3000;
 /* set up the application params*/
 const TodosController = require('./controller/todos');
+
 // log
 app.use( logger('dev'));
 app.use(bodyParser.urlencoded({
   extended: true
 }));
+app.use(methodOverride('_method'));
 
 /*Views*/
 app.set('view engine', 'hbs');
