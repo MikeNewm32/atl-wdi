@@ -25,7 +25,7 @@ class Tamagotchi {
     console.log(this.name + ' has current restedness = ' + this.restedness);
   };
   start(){
-    console.log("Starting " + this.name);
+    console.log("Staarting " + this.name);
     var self = this;
     this.hungerTimer = setInterval(function() {
       self.cry();
