@@ -13,18 +13,32 @@ class Tamagotchi {
     cry() {
         this.foodInTummy--;
         console.log("WAHH!!!!");
-        console.log(this.name + ' only has ' + this.foodInTummy + ' food left in its tummy');
+        console.log(this.name + ' only has ' + this.foodInTummy + ' food left in its tummy!');
+    }
+    puke() {
+        this.foodInTummy--;
+        console.log("UGGHHh I'm gonna be sick!");
+        console.log(this.name + ' only has ' + this.foodInTummy + ' food left in its tummy!');
+    }
+    yawn() {
+        this.restedness--;
+        console.log(this.name + " has current restedness of: " + this.restedness);
     }
 }
 
+
 //create new Tamagotchis
 
-var Frank = new Tamagotchi("Frank");
-var Bill = new Tamagotchi("Bill");
+var Frank = new Tamagotchi("Frank", "rollie");
+var Bill = new Tamagotchi("Bill", "bouncy");
 
 
 //test out your Tamagotchies below via console.logs
-console.log("Frank", "rollie");
-console.log("Bill", "bouncy");
+console.log("Frank");
+console.log("Bill");
 Frank.cry();
 Bill.cry();
+Frank.puke();
+Bill.puke();
+Frank.yawn();
+Bill.yawn();
