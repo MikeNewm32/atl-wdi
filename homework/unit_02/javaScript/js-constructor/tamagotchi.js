@@ -22,6 +22,7 @@ class Tamagotchi {
     }
     yawn() {
         this.restedness--;
+        console.log("Sooooooo sleepy!ZZZZ")
         console.log(this.name + " has current restedness of: " + this.restedness);
     }
 }
