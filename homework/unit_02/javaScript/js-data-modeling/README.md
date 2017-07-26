@@ -30,7 +30,13 @@ entities/abstractions (e.g. Senior Paws app, above) that the app might use, and 
 This app provides easy access to all your e-mail service providers in one app. The app will let you select one of your email addresses and view your e-mails for that address.
 
 ```
-Write your answer here or in a separate js file.
+Users                                                   Email Providers
+* User ID  :number                                    * email database   :array/string/number
+* User name  :string                                  * login info   :array/string/number
+* Emails    :array/string/number                      * passwords    :array/string/number
+* Email logins  :array/string/number                  * user name     :string
+* Primary Email for recovery   :string/number         * mail          :?
+
 ```
 
 ### 2. Radio on the Internet app
@@ -39,7 +45,12 @@ This app hosts a ton of radio stations, each featuring their own playlists of so
 
 
 ```
-Write your answer here or in a separate js file.
+Radio station                           User
+* favs playlist  :string             * Username     :string
+* hits playlist   :string            * Name       :string
+* genre           :string            * favs       :string
+* popular       :string              * saved station    :string
+
 ```
 
 ### 3. Rock Concert App
@@ -47,19 +58,39 @@ Write your answer here or in a separate js file.
 This app will be a tool for managing all of your favorite bands' concerts; it will keep track of their tour dates, ticket purchasing, and next recommended show.
 
 ```
-Write your answer here or in a separate js file.
+User                                Bands
+* Username    :string               * Name   :string
+* Name    :string                   * Genre   :string
+* user location     :string         * concert date   :string
+* bands   :string                   * concert location      :string
+* fav bands   :string               * ticket price   :number
 ```
 
 ### 4. Coffee To-Go App
 
 This app will allow customers to browse a list of coffeeshops nearby, order drinks off of their menu, add those drinks to a shopping cart, and save that cart as a past order once the purchase is complete.
 
+```
+User                            Cart                                 Shop
+* username   :string            *items    :string                   *location       :string
+* name       :string            *price    :number                   *products       :string 
+* password      :string         *description     :string            *description      :string
+* location   :string            *sizes    :string                   *prices         :number
+* payment info   :string        *number of items    :number         *contact info       :string
+* card number   :number         
+```
+
 ### 5. Team Tracker App
 
 This app shows you all the latest stats from your favorite sports teams. You can view individual player stats and full team stats.
 
 ```
-Write your answer here or in a separate js file.
+User                            Teams
+*username   :string             *players    :string
+*name       :string             *player stats    :number,array
+*password     :string           *team stats     :number,array
+*fav teams   :string,array      *games     :string
+*fav players    :string,array         
 ```
 
 
@@ -68,7 +99,7 @@ Write your answer here or in a separate js file.
 Q. When you were creating relationships between the models, what were some thoughts or questions you had to help guide a connection between them?
 
 ```
-Write your answer here or in a separate js file.
+What each relationship was and what information one need to provide for the other to receive to make the app able to accomplish its purpose. Also what other information that was needed to diffentiate one user from another so their fav list or whatever could be separated.
 ```
 
 ### Reading and Videos for Tomorrow
