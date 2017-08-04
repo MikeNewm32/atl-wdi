@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
 
+import React, { Component } from 'react';
+import PizzaOven from '../images/pizzaoven.jpg';
 
 class Description extends Component {
-  render(){
+  render () {
     return (
-      <div>
-        <h1>Description</h1>
-        <p>Deep v jean shorts tumeric lo-fi. Pabst salvia hammock, neutra before they sold out fingerstache paleo viral flannel mlkshk kombucha echo park crucifix gochujang unicorn. Swag chia umami chillwave scenester. Scenester pop-up you probably haven't heard of them master cleanse. Poutine next level yr trust fund, meditation cloud bread flexitarian narwhal knausgaard schlitz four dollar toast offal put a bird on it lo-fi fanny pack. Literally skateboard migas mumblecore, celiac waistcoat health goth. Humblebrag cred neutra portland chillwave master cleanse keffiyeh copper mug enamel pin hexagon offal. Vape pop-up paleo cliche street art. Next level heirloom gluten-free viral cred. Crucifix ramps edison bulb, blue bottle lo-fi banh mi live-edge. Raw denim fingerstache celiac pug, squid succulents live-edge chillwave kale chips trust fund banjo. Viral air plant synth, beard tousled irony post-ironic chia crucifix iceland roof party waistcoat truffaut tumblr lyft.</p>
+      <div className="description" id="description">
+        <img src = {PizzaOven} alt='PizzaOven' />
+        <p>Pommy ipsum by 'eck love blummin' got his end away what a load of guff pompous, Time Lord bent as a nine bob note knackered damn smeg. The Hounds of Baskerville smeg pork scratchings ended up brown bread completely crackers in the goolies hard cheese old boy scatterbrained, queer as a clockwork orange spiffing in a pickle the chippy cup of tea picalilly, cotton on scrumpy flog a dead horse what a load of guff pulled a right corker 'tis. On his tod good old fashioned knees up naff done up like a kipper Essex girls, River Song the lakes. Ask your mother if a right royal knees up squirrel marmite it's cracking flags pezzy little cor blimey', penny-dreadful it's me peepers in a pickle absolute. </p>
       </div>
     );
   }
 }
-
-
 
 export default Description;

@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import LocationList from './LocationList';
-import MenuList from './MenuList';
 
-
-class Navbar extends Component {
-  render(){
+class NavBar extends Component {
+  render () {
     return (
-      <div>
-        <h1>Pizza-Express</h1>
+       <div className="navbar">
+          <a>Our Story</a>
+          <a>Menu</a>
+          <h1>Pizza Express</h1>
+          <a>Locations</a>
+          <a>Contact</a>
       </div>
     );
   }
 }
 
-
-
-export default Navbar;
+export default NavBar;

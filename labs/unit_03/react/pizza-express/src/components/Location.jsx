@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
-import locationData from '../locationData.js';
 
 
 class Location extends Component {
-  render(){
+  render () {
     return (
-      <div>
-        {specs.map((spec, i) => {
-            return <Location key={i} name={spec.name} address={spec.address} phone={spec.phone} />
-        })}
+      
+      <div className="location">
+        <p> {this.props.name} </p>
+        <p>Address</p>
+        <p> {this.props.address} </p>
+        <p>Contact</p>
+        <p> {this.props.phone} </p>
       </div>
-    );
+    
+    )
   }
 }
-
-
 
 export default Location;

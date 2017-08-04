@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
-import pizzaData from '../pizzaData.js';
 
 
 class MenuItem extends Component {
-  render(){
+  render () {
     return (
-      <div>
-            <h1>Hello</h1>
+      <div className="menu-item" >
+        <img src={this.props.data.image} />
+      <div className="menu-description">
+        <div className="menu-item-name">{this.props.data.name}</div>
+        <div>Price: {this.props.data.price}</div>
+        <div>{this.props.data.description}</div>
       </div>
-    );
+    </div>
+   );
   }
 }
-
-
 
 export default MenuItem;
