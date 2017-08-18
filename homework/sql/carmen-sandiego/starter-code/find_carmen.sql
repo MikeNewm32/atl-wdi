@@ -26,3 +26,18 @@ Italian
 ------+------------+-------------+-------------------+------------
  3170 | Serravalle | SMR         | Serravalle/Dogano |       4802
  3171 | San Marino | SMR         | San Marino        |       2294
+
+6.SELECT * FROM city WHERE name ILIKE '%serr%';
+  265 | Serra                    | BRA         | Esp�rito Santo    |     302666
+  310 | Tabo�o da Serra        | BRA         | S�o Paulo         |     197550
+  370 | Itapecerica da Serra     | BRA         | S�o Paulo         |     126672
+5.SELECT capital FROM country WHERE code = 'BRA';
+  211
+  SELECT * FROM city WHERE id = 211;
+ id  |    name    | countrycode |     district     | population
+-----+------------+-------------+------------------+------------
+ 211 | Bras�lia | BRA         | Distrito Federal |    1969868
+6.SELECT name, district FROM city WHERE population = 91084;
+     name     |  district
+--------------+------------
+ Santa Monica | California
