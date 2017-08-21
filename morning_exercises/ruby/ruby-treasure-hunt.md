@@ -27,25 +27,25 @@ Ready.... Set..... Go!!!
 1.   What method would turn "marc" into "cram"?
 
   ```
-  your answer here
+  .reverse
   ```
 
 2.   What method could you use that returns a boolean to check if "pickle" includes the substring "ick"?
 
   ```
-  your answer here
+  includes
   ```
 
 3.  What method would check to see if `249092` is an odd number?
 
   ```
-  your answer here
+  if statement for even method if returns false then its odd
   ```
 
 4.   What method would turn `"winter is coming"` into `["winter", "is", "coming"]`?
 
   ```
-  your answer here
+  split method
   ```
 
 5.   What method could replace all vowels in `"banana"` and replace them with `!` so it returns `b!n!n!`?
