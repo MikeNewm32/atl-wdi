@@ -33,31 +33,31 @@ Ready.... Set..... Go!!!
 2.   What method could you use that returns a boolean to check if "pickle" includes the substring "ick"?
 
   ```
-  includes
+  include?
   ```
 
 3.  What method would check to see if `249092` is an odd number?
 
   ```
-  if statement for even method if returns false then its odd
+  odd?
   ```
 
 4.   What method would turn `"winter is coming"` into `["winter", "is", "coming"]`?
 
   ```
-  split method
+  split
   ```
 
 5.   What method could replace all vowels in `"banana"` and replace them with `!` so it returns `b!n!n!`?
 
   ```
-  your answer here
+  gsub
   ```
 
 6.  Which method can check to see if `"vanilla"` is a key for `cupcake = {"chocolate" => 4, "strawberry" => 0, "vanilla" => 3}` ?
 
   ```
-  your answer here
+  has_key
   ```
 
 7.   What method can I use on `weather` to find how many key/value pairs exist in `weather = {:snow => true, :rain => false, :sun => false}` so it returns `3`?

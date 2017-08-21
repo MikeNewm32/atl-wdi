@@ -29,7 +29,7 @@ Your Answer Here
 2. What does SOLID stand for?
 
 ```
-Your Answer Here
+Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion
 ```
 
 3. Ruby is a class-based object-oriented language. What does that mean?
@@ -41,7 +41,7 @@ Your Answer Here
 4. Where are methods defined in Ruby?
 
 ```
-Your Answer Here
+Classes
 ```
 
 5. Why does single Responsibility matter?
@@ -53,7 +53,7 @@ Your Answer Here
 6. What does `attr_reader` do?
 
 ```
-Your Answer Here
+Creates and encapsulating method
 ```
 
 7. What are 4 benefits Metz outlines for methods that have a single responsibility?
