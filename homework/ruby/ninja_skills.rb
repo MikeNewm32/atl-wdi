@@ -39,12 +39,24 @@
 # fun = gets.chomp
 # puts "#{name} really likes to #{fun}!!!"
 
-#Challenge 6
-myFirstArray = []
-myFirstArray = ["one", "two", "three", "four", "five", 1, 2, 3, 4]
-puts myFirstArray.last
-puts myFirstArray.first
-myFirstArray[1] = "Joe"
-myFirstArray[2] = 3
-myFirstArray.push("true")
-puts myFirstArray[3].class
+# Challenge 6
+# myFirstArray = []
+# myFirstArray = ["one", "two", "three", "four", "five", 1, 2, 3, 4]
+# puts myFirstArray.last
+# puts myFirstArray.first
+# myFirstArray[1] = "Joe"
+# myFirstArray[2] = 3
+# myFirstArray.push("true")
+# puts myFirstArray[3].class
+
+# Challenge 7
+myFavoriteAnimals = {
+    "Edgar"=> "Donkey",
+    "Apollo"=> "Axolotl",
+    "Coco"=> "Gecko",
+    "Muffin"=> "Bunny",
+    "Tucker"=> "Dog"
+}
+myFavoriteAnimals["Edgar"] = "Bear"
+myFavoriteMovie = {}
+myFavoriteMovie[:movie] = "Braveheart"
