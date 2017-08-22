@@ -50,13 +50,32 @@
 # puts myFirstArray[3].class
 
 # Challenge 7
-myFavoriteAnimals = {
-    "Edgar"=> "Donkey",
-    "Apollo"=> "Axolotl",
-    "Coco"=> "Gecko",
-    "Muffin"=> "Bunny",
-    "Tucker"=> "Dog"
-}
-myFavoriteAnimals["Edgar"] = "Bear"
-myFavoriteMovie = {}
-myFavoriteMovie[:movie] = "Braveheart"
+# myFavoriteAnimals = {
+#     "Edgar"=> "Donkey",
+#     "Apollo"=> "Axolotl",
+#     "Coco"=> "Gecko",
+#     "Muffin"=> "Bunny",
+#     "Tucker"=> "Dog"
+# }
+# myFavoriteAnimals["Edgar"] = "Bear"
+# myFavoriteMovie = {}
+# myFavoriteMovie[:movie] = "Braveheart"
+
+# Challenge 8
+# firstRange = (1..10)
+# firstRange.to_a
+# secondRange = (1...1000)
+# secondRange.to_a
+# for number in firstRange
+#     puts number.to_s
+# end
+# x = 0
+# secondRange = secondRange.to_a
+# while x < 50 do
+#  puts secondRange[x]
+#     x += 1
+# end
+# thirdRange = []
+
+
+
