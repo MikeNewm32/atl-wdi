@@ -12,9 +12,29 @@
 # puts name.class
 
 # Challenge 3
-d = 10
-puts d
-e = 5.5
-puts e
-d = e
-puts d
+# d = 10
+# puts d
+# e = 5.5
+# puts e
+# d = e
+# puts d
+
+# Challenge 4
+# christine = "Hi, I'm Christine"
+# likesTo = "long walks on the beach, kinda."
+# tims = "#{christine} and I like #{likesTo}"
+# puts tims
+# g = "2"
+# gToNumber = 2
+# puts g + gToNumber
+# puts g.to_i + gToNumber
+
+# Challenge 5
+# puts "Multiply what number?"
+# multiply = gets.chomp
+# puts multiply.to_i * 2
+puts "Whats your name?"
+name = gets.chomp
+puts "What do you like to do?"
+fun = gets.chomp
+puts "#{name} really likes to #{fun}!!!"
