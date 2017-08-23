@@ -3,99 +3,121 @@ require 'Date'
 
 # 1. Find the first user who signed up for our app:
 
-users = [
-    {
-        username: 'batman',
-        created_at: Date.new(2001,2,3)
-    },
-    {
-        username: 'robin',
-        created_at: Date.new(1995,4,14)
-    },
-    {
-        username: 'alfred',
-        created_at: Date.new(2014,7,23)
-    }
-]
+# users = [
+#     {
+#         username: 'batman',
+#         created_at: Date.new(2001,2,3)
+#     },
+#     {
+#         username: 'robin',
+#         created_at: Date.new(1995,4,14)
+#     },
+#     {
+#         username: 'alfred',
+#         created_at: Date.new(2014,7,23)
+#     }
+# ]
 
-first_user = ???
+# first_user = users.min_by do |user|
+#     user[:created_at]
+# end
+
+# puts first_user
 
 # 2. Find the first customer's account balance
 
-customers = [
-    OpenStruct.new(
-        credits: [
-            OpenStruct.new(
-                amount: 45.99
-            ),
-            OpenStruct.new(
-                amount: 9.99
-            )
-        ],
-        debits: [
-            OpenStruct.new(
-                amount: 34.99
-            ),
-            OpenStruct.new(
-                amount: 24.99
-            )
-        ]
-    ),
-    OpenStruct.new(
-        credits: [
-            OpenStruct.new(
-                amount: 35.99
-            ),
-            OpenStruct.new(
-                amount: 75.99
-            )
-        ],
-        debits: [
-            OpenStruct.new(
-                amount: 346.99
-            ),
-            OpenStruct.new(
-                amount: 1.99
-            )
-        ]
-    )
-]
+# customers = [
+#     OpenStruct.new(
+#         credits: [
+#             OpenStruct.new(
+#                 amount: 45.99
+#             ),
+#             OpenStruct.new(
+#                 amount: 9.99
+#             )
+#         ],
+#         debits: [
+#             OpenStruct.new(
+#                 amount: 34.99
+#             ),
+#             OpenStruct.new(
+#                 amount: 24.99
+#             )
+#         ]
+#     ),
+#     OpenStruct.new(
+#         credits: [
+#             OpenStruct.new(
+#                 amount: 35.99
+#             ),
+#             OpenStruct.new(
+#                 amount: 75.99
+#             )
+#         ],
+#         debits: [
+#             OpenStruct.new(
+#                 amount: 346.99
+#             ),
+#             OpenStruct.new(
+#                 amount: 1.99
+#             )
+#         ]
+#     )
+# ]
 
-first_customer_account_balance = ???
+# first_customer = customers.first
 
-# 3. Remove hair care products from the database
+# first_customer_total_credits = first_customer.credits.map do |credit|
+#     credit.amount
+# end.reduce(:+)
 
-products = [
-    {
-        category: 'SPORTS'
-    },
-    {
-        category: 'MOVIES'
-    },
-    {
-        category: 'MOVIES'
-    },
-    {
-        category: 'HAIR_CARE'
-    },
-    {
-        category: 'MOVIES'
-    },
-    {
-        category: 'HAIR_CARE'
-    }
-]
+# first_customer_total_debits = first_customer.debits.map do |debit|
+#     debit.amount
+# end.reduce(:+)
 
-no_hair_care_products = ???
+# first_customer_account_balance = first_customer_total_credits - first_customer_total_debits
+
+# puts first_customer_account_balance
+
+# # 3. Remove hair care products from the database
+
+# products = [
+#     {
+#         category: 'SPORTS'
+#     },
+#     {
+#         category: 'MOVIES'
+#     },
+#     {
+#         category: 'MOVIES'
+#     },
+#     {
+#         category: 'HAIR_CARE'
+#     },
+#     {
+#         category: 'MOVIES'
+#     },
+#     {
+#         category: 'HAIR_CARE'
+#     }
+# ]
+
+# no_hair_care_products = products.reject do |product|
+#     product[:category].upcase == 'HAIR_CARE'
+# end
+
+# puts no_hair_care_products
 
 # 4. If any item in the array is a number, change it to a String
 # e.g. [1, 2, 'blah'] ===> ['1', '2', 'blah']
 
-const things = [23, 43, 'strawberry', 'ruby', 234643234, 'another red thing', 1337]
+# things = [23, 43, 'strawberry', 'ruby', 234643234, 'another red thing', 1337]
 
-const string_things = ???
+# string_things = things.map {|thing| thing.to_s}
 
-# 5. Sort customers alphabetically by first and last name:
+# puts string_things
+
+# # 5. Sort customers alphabetically by first and last name:
 
 customers = [
     OpenStruct.new(
@@ -114,21 +136,21 @@ customers = [
 
 sorted_customers = ???
 
-# 6. Return all decorations with blue in their description
+# # 6. Return all decorations with blue in their description
 
-decorations = [
-    {
-        description: 'Blue birthday hat'
-    },
-    {
-        description: 'red balloon'
-    },
-    {
-        description: 'yellow candles'
-    },
-    {
-        description: 'blue confetti'
-    }
-]
+# decorations = [
+#     {
+#         description: 'Blue birthday hat'
+#     },
+#     {
+#         description: 'red balloon'
+#     },
+#     {
+#         description: 'yellow candles'
+#     },
+#     {
+#         description: 'blue confetti'
+#     }
+# ]
 
-blue_decorations = ???
+# blue_decorations = ???
